@@ -1,0 +1,47 @@
+// Font Family
+$ff-primary: "Red Hat Display", sans-serif;
+
+// Font Weights
+$fw-medium: 500;
+$fw-black: 900;
+
+// Font Sizes
+$fs-base: 1.6rem; // Base for reference (from Text Preset 5)
+$fs-large: 1.8rem; // From Text Preset 4
+$fs-h3: 3.6rem; // From Text Preset 3
+$fs-h2: 4rem; // From Text Preset 2
+$fs-h1: 6.4rem; // From Text Preset 1
+
+// Line Heights
+$lh-normal: 110%;
+$lh-large: 150%;
+
+// Letter spacing
+$ls-tight: 4px;
+$ls-normal: 0px;
+
+// Spacing Tokens - 8pt Grid System
+$space-50: 4px; // Smallest spacing unit
+$space-100: 8px; // Base unit
+$space-200: 16px; // 2× base
+$space-300: 24px; // 3× base
+$space-400: 32px; // 4× base
+$space-500: 40px; // 5× base
+$space-700: 56px; // 7× base
+$space-800: 64px; // 8× base
+$space-900: 72px; // 9× base
+$space-1000: 80px; // 10× base
+$space-1400: 112px; // 14× base
+
+// Base colors (direct color references)
+$color-cyan-600: #4d96a9;
+$color-cyan-300: #8fe3f9;
+
+$color-purple-600: #855fb1;
+$color-purple-300: #d9b8ff;
+
+$color-slate-900: #28283d;
+$color-slate-600: #87879d;
+$color-slate-300: #d1d1df;
+
+$color-white: #fafafa;

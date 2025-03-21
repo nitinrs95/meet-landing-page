@@ -1,0 +1,27 @@
+@use "./variables" as v;
+
+// Text Preset Mixins
+
+@mixin text-preset-2 {
+  font-family: v.$ff-primary;
+  font-weight: v.$fw-black;
+  font-size: v.$fs-h2;
+  line-height: v.$lh-normal;
+  letter-spacing: v.$ls-normal;
+}
+
+@mixin text-preset-3 {
+  font-family: v.$ff-primary;
+  font-weight: v.$fw-black;
+  font-size: v.$fs-large;
+  line-height: v.$lh-normal;
+  letter-spacing: v.$ls-tight;
+}
+
+@mixin text-preset-5 {
+  font-family: v.$ff-primary;
+  font-weight: v.$fw-black;
+  font-size: v.$fs-base;
+  line-height: v.$lh-large;
+  //   letter-spacing: v.$ls-normal;
+}

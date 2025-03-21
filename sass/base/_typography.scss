@@ -1,0 +1,17 @@
+@use "../abstracts/" as a;
+
+h1 {
+  font-family: a.$ff-primary;
+  font-weight: a.$fw-black;
+  font-size: 6.4rem;
+  line-height: a.$lh-normal;
+  letter-spacing: a.$ls-normal;
+}
+
+p {
+  font-family: a.$ff-primary;
+  font-weight: a.$fw-medium;
+  font-size: 1.8rem;
+  line-height: a.$lh-large;
+  letter-spacing: a.$ls-normal;
+}

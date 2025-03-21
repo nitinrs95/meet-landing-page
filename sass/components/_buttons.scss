@@ -1,0 +1,38 @@
+@use "../abstracts/" as a;
+
+.btn {
+  color: a.$color-white;
+  padding: 1.6rem 4rem;
+  border-radius: 10rem;
+  border: none;
+  display: inline-block;
+  @include a.text-preset-5;
+  transition: background-color 0.2s ease-in;
+
+  // span {
+  //   display: inline-block;
+  //   color: a.$color-cyan-300;
+  // }
+
+  &--primary:link,
+  &--primary:visited {
+    background-color: a.$color-cyan-600;
+    justify-self: end;
+  }
+
+  &--primary:hover,
+  &--primary {
+    background-color: a.$color-cyan-300;
+  }
+
+  &--secondary:link,
+  &--secondary:visited {
+    background-color: a.$color-purple-600;
+    justify-self: start;
+  }
+
+  &--secondary:hover,
+  &--secondary:active {
+    background-color: a.$color-purple-300;
+  }
+}

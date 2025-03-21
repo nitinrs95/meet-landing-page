@@ -1,0 +1,56 @@
+@use "../abstracts/" as a;
+
+.container-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "image-box-left content image-box-right";
+  gap: 3.2rem;
+  padding: 8rem 6.4rem;
+  justify-items: center;
+  align-items: center;
+
+  &__image-left {
+    grid-area: image-box-left;
+
+    transform: translateX(-25%) translateY(-5%);
+  }
+
+  &__image-right {
+    grid-area: image-box-right;
+    transform: translateX(25%) translateY(15%);
+  }
+
+  &__hero-content {
+    grid-area: content;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+      "heading heading"
+      "summary summary"
+      "btn1 btn2";
+    gap: a.$space-400;
+    column-gap: 1.7rem;
+    justify-items: center;
+    justify-content: space-between;
+    // align-items: center;
+    text-align: center;
+  }
+
+  &__heading {
+    grid-area: heading;
+    color: a.$color-slate-900;
+  }
+
+  &__summary {
+    grid-area: summary;
+    color: a.$color-slate-600;
+  }
+
+  &__download-btn {
+    justify-self: end;
+  }
+
+  &__what-is-it {
+    justify-self: start;
+  }
+}
