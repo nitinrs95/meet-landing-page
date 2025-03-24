@@ -1,0 +1,68 @@
+@use "../abstracts/" as a;
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6.4rem;
+  width: 112rem;
+
+  .number-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__images {
+    display: flex;
+
+    // grid-template-columns: repeat(auto-fit, 256px);
+    // grid-template-columns: repeat(auto-fit, minmax(min(256px, 100%), 1fr));
+    gap: 3.2rem;
+    width: 100%;
+    // flex-grow: 1;
+
+    img {
+      width: 100%;
+      max-width: 256px;
+    }
+  }
+
+  &__image-box {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  &__main-content {
+    text-align: center;
+    max-width: 54.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    width: 44.5rem;
+  }
+
+  &__tertiary-heading {
+    color: a.$color-cyan-600;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+  }
+
+  &__secondary-heading {
+    color: a.$color-slate-900;
+  }
+
+  &__summary {
+    color: a.$color-slate-600;
+  }
+}

@@ -15,3 +15,19 @@ p {
   line-height: a.$lh-large;
   letter-spacing: a.$ls-normal;
 }
+
+h2 {
+  font-family: a.$ff-primary;
+  font-weight: a.$fw-black;
+  font-size: a.$fs-h2;
+  line-height: a.$lh-normal;
+  letter-spacing: a.$ls-normal;
+}
+
+h3 {
+  font-family: a.$ff-primary;
+  font-weight: a.$fw-black;
+  font-size: a.$fs-base;
+  line-height: a.$lh-large;
+  letter-spacing: a.$ls-tight;
+}

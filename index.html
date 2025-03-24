@@ -25,13 +25,15 @@
       <img class="logo" src="./assets/logo.svg" alt="Logo" />
     </header>
     <main>
-      <section>
+      <section class="section--hero">
         <div class="container-hero">
-          <img
-            class="container-hero__image-left"
-            src="./assets/desktop/image-hero-left.png"
-            alt="Images of Customers 1"
-          />
+          <picture>
+            <source srcset="./assets/desktop/image-hero-left.png" />
+            <img
+              class="container-hero__image-left"
+              srcset="./assets/desktop/image-hero-left.png"
+              alt="Images of Customers 1"
+          /></picture>
 
           <div class="container-hero__hero-content">
             <h1 class="container-hero__heading">Group Chat for Everyone</h1>
@@ -50,10 +52,61 @@
           />
         </div>
       </section>
-      01 Built for modern use Smarter meetings, all in one place Send messages,
-      share files, show your screen, and record your meetings — all in one
-      workspace. Control who can join with invite-only team access, data
-      encryption, and data export.
+      <section class="section--main">
+        <div class="container-main">
+          <div class="number-container">
+            <div class="line"></div>
+            <div class="circle-container">
+              <span class="circle-text">01</span>
+            </div>
+          </div>
+          <div class="container-main__images">
+            <div class="container-main__image-box">
+              <img
+                src="./assets/desktop/image-woman-in-videocall.jpg"
+                alt="image-woman-in-videocall"
+                class=""
+              />
+            </div>
+            <div class="container-main__image-box">
+              <img
+                src="./assets/desktop/image-women-videochatting.jpg"
+                alt=""
+                class=""
+              />
+            </div>
+            <div class="container-main__image-box">
+              <img
+                src="./assets/desktop/image-men-in-meeting.jpg"
+                alt=""
+                class=""
+              />
+            </div>
+            <div class="container-main__image-box">
+              <img
+                src="./assets/desktop/image-man-texting.jpg"
+                alt=""
+                class=""
+              />
+            </div>
+          </div>
+          <div class="container-main__main-content">
+            <div class="container-main__heading">
+              <h3 class="container-main__tertiary-heading">
+                Built for modern use
+              </h3>
+              <h2 class="container-main__secondary-heading">
+                Smarter meetings, all in one place
+              </h2>
+            </div>
+            <p class="container-main__summary">
+              Send messages, share files, show your screen, and record your
+              meetings — all in one workspace. Control who can join with
+              invite-only team access, data encryption, and data export.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       02 Experience more together Stay connected with reliable HD meetings and

@@ -1,0 +1,22 @@
+@use "../abstracts/" as a;
+
+.line {
+  width: 1px;
+  height: 80px;
+  background-color: a.$color-slate-300;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid a.$color-slate-300;
+}
+.circle-text {
+  color: a.$color-slate-600;
+  font-size: 1.6rem;
+  font-weight: a.$fw-black;
+}

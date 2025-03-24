@@ -36,6 +36,22 @@ p {
   letter-spacing: 0px;
 }
 
+h2 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 110%;
+  letter-spacing: 0px;
+}
+
+h3 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-size: 1.6rem;
+  line-height: 150%;
+  letter-spacing: 4px;
+}
+
 header {
   max-width: 144rem;
   margin: 0 auto;
@@ -54,6 +70,10 @@ section {
   display: flex;
   justify-content: center;
   overflow: hidden;
+}
+
+.section--main {
+  padding: 5.6rem 8rem 7.2rem;
 }
 
 .container-hero {
@@ -99,6 +119,60 @@ section {
   justify-self: start;
 }
 
+.container-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6.4rem;
+  width: 112rem;
+}
+.container-main .number-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-main__images {
+  display: flex;
+  gap: 3.2rem;
+  width: 100%;
+}
+.container-main__images img {
+  width: 100%;
+  max-width: 256px;
+}
+.container-main__image-box {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.container-main__main-content {
+  text-align: center;
+  max-width: 54.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  justify-content: center;
+  align-items: center;
+}
+.container-main__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 44.5rem;
+}
+.container-main__tertiary-heading {
+  color: #4d96a9;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+}
+.container-main__secondary-heading {
+  color: #28283d;
+}
+.container-main__summary {
+  color: #87879d;
+}
+
 footer {
   max-width: 144rem;
 }
@@ -128,4 +202,26 @@ footer {
 }
 .btn--secondary:hover, .btn--secondary:active {
   background-color: #d9b8ff;
+}
+
+.line {
+  width: 1px;
+  height: 80px;
+  background-color: #d1d1df;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid #d1d1df;
+}
+
+.circle-text {
+  color: #87879d;
+  font-size: 1.6rem;
+  font-weight: 900;
 }/*# sourceMappingURL=main.css.map */
