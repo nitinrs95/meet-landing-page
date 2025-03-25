@@ -127,12 +127,6 @@ section {
   gap: 6.4rem;
   width: 112rem;
 }
-.container-main .number-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 .container-main__images {
   display: flex;
   gap: 3.2rem;
@@ -175,6 +169,55 @@ section {
 
 footer {
   max-width: 144rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer__number-container {
+  margin-bottom: -2.8rem;
+  z-index: 1;
+}
+
+.footer-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 11.2rem 8rem;
+  background-image: linear-gradient(to right bottom, rgba(77, 150, 169, 0.9), rgba(77, 150, 169, 0.9)), url(../../assets/desktop/image-footer.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.footer-content {
+  width: 112rem;
+  display: flex;
+  justify-content: center;
+  gap: 3.2rem;
+}
+.footer-content__secondary-heading {
+  flex: 1;
+  color: #fafafa;
+}
+.footer-content__summary {
+  flex: 1;
+  color: #fafafa;
+}
+.footer-content__button span {
+  color: #d9b8ff;
+}
+.footer-content__button:link, .footer-content__button:visited {
+  background-color: #855fb1;
+  align-self: flex-start;
+  width: auto;
+  flex-shrink: 0;
+}
+.footer-content__button:hover, .footer-content__button:active {
+  background-color: #d9b8ff;
 }
 
 .btn {
@@ -188,12 +231,17 @@ footer {
   font-size: 1.6rem;
   line-height: 150%;
   transition: background-color 0.2s ease-in;
+  cursor: pointer;
+}
+.btn span {
+  display: inline-block;
+  color: #8fe3f9;
 }
 .btn--primary:link, .btn--primary:visited {
   background-color: #4d96a9;
   justify-self: end;
 }
-.btn--primary:hover, .btn--primary {
+.btn--primary:hover, .btn--primary:active {
   background-color: #8fe3f9;
 }
 .btn--secondary:link, .btn--secondary:visited {
@@ -202,6 +250,13 @@ footer {
 }
 .btn--secondary:hover, .btn--secondary:active {
   background-color: #d9b8ff;
+}
+
+.number-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .line {
@@ -218,6 +273,7 @@ footer {
   height: 56px;
   border-radius: 50%;
   border: 1px solid #d1d1df;
+  background-color: #fafafa;
 }
 
 .circle-text {

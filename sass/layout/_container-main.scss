@@ -8,21 +8,10 @@
   gap: 6.4rem;
   width: 112rem;
 
-  .number-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   &__images {
     display: flex;
-
-    // grid-template-columns: repeat(auto-fit, 256px);
-    // grid-template-columns: repeat(auto-fit, minmax(min(256px, 100%), 1fr));
     gap: 3.2rem;
     width: 100%;
-    // flex-grow: 1;
 
     img {
       width: 100%;

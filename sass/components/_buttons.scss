@@ -8,11 +8,12 @@
   display: inline-block;
   @include a.text-preset-5;
   transition: background-color 0.2s ease-in;
+  cursor: pointer;
 
-  // span {
-  //   display: inline-block;
-  //   color: a.$color-cyan-300;
-  // }
+  span {
+    display: inline-block;
+    color: a.$color-cyan-300;
+  }
 
   &--primary:link,
   &--primary:visited {
@@ -21,7 +22,7 @@
   }
 
   &--primary:hover,
-  &--primary {
+  &--primary:active {
     background-color: a.$color-cyan-300;
   }
 

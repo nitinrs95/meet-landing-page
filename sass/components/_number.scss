@@ -1,5 +1,12 @@
 @use "../abstracts/" as a;
 
+.number-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .line {
   width: 1px;
   height: 80px;
@@ -14,6 +21,7 @@
   height: 56px;
   border-radius: 50%;
   border: 1px solid a.$color-slate-300;
+  background-color: a.$color-white;
 }
 .circle-text {
   color: a.$color-slate-600;

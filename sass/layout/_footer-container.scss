@@ -1,0 +1,58 @@
+@use "../abstracts/" as a;
+
+.footer-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 11.2rem 8rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(a.$color-cyan-600, 0.9),
+      rgba(a.$color-cyan-600, 0.9)
+    ),
+    url(../../assets/desktop/image-footer.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.footer-content {
+  width: 112rem;
+  display: flex;
+  justify-content: center;
+  gap: 3.2rem;
+  &__secondary-heading {
+  }
+
+  &__secondary-heading {
+    flex: 1;
+    color: a.$color-white;
+  }
+
+  &__summary {
+    flex: 1;
+    color: a.$color-white;
+  }
+
+  &__button {
+    span {
+      color: a.$color-purple-300;
+    }
+
+    &:link,
+    &:visited {
+      background-color: a.$color-purple-600;
+      align-self: flex-start;
+      width: auto;
+      flex-shrink: 0;
+    }
+
+    &:hover,
+    &:active {
+      background-color: a.$color-purple-300;
+    }
+  }
+}
