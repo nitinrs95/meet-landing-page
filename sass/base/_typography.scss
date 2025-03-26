@@ -3,7 +3,7 @@
 h1 {
   font-family: a.$ff-primary;
   font-weight: a.$fw-black;
-  font-size: 6.4rem;
+  font-size: clamp(4.8rem, 5vw, 6.4rem);
   line-height: a.$lh-normal;
   letter-spacing: a.$ls-normal;
 }
