@@ -24,3 +24,26 @@
   font-size: v.$fs-base;
   line-height: v.$lh-large;
 }
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == tab-land {
+    //768PX
+    @media only screen and (max-width: 62.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-port {
+    //768PX
+    @media only screen and (max-width: 48em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == phone {
+    //768PX
+    @media only screen and (max-width: 23.4375em) {
+      @content;
+    }
+  }
+}

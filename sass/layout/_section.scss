@@ -1,13 +1,22 @@
+@use "../abstracts/" as v;
+
 section {
   max-width: 144rem;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   overflow: hidden;
+
+  @include v.respond(tab-land) {
+    max-width: 76.8rem;
+  }
 }
 
 .section {
   &--main {
-    padding: 5.6rem 8rem 7.2rem;
+    padding: 5.6rem 3.2rem 6.4rem;
+    @include v.respond(tab-land) {
+      padding: 5.6rem 0 7.2rem;
+    }
   }
 }

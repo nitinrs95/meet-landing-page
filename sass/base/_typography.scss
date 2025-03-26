@@ -3,7 +3,8 @@
 h1 {
   font-family: a.$ff-primary;
   font-weight: a.$fw-black;
-  font-size: clamp(4.8rem, 5vw, 6.4rem);
+  font-size: clamp(4.8rem, 4.5vw, 6.4rem);
+  // font-size: 6.4rem;
   line-height: a.$lh-normal;
   letter-spacing: a.$ls-normal;
 }
@@ -11,7 +12,7 @@ h1 {
 p {
   font-family: a.$ff-primary;
   font-weight: a.$fw-medium;
-  font-size: 1.8rem;
+  font-size: clamp(1.6rem, 4.5vw, 1.8rem);
   line-height: a.$lh-large;
   letter-spacing: a.$ls-normal;
 }
@@ -19,7 +20,7 @@ p {
 h2 {
   font-family: a.$ff-primary;
   font-weight: a.$fw-black;
-  font-size: a.$fs-h2;
+  font-size: clamp(3.6rem, 4.5vw, 4rem);
   line-height: a.$lh-normal;
   letter-spacing: a.$ls-normal;
 }
@@ -27,7 +28,7 @@ h2 {
 h3 {
   font-family: a.$ff-primary;
   font-weight: a.$fw-black;
-  font-size: a.$fs-base;
+  font-size: clamp(1.4rem, 2vw, 1.6rem);
   line-height: a.$lh-large;
   letter-spacing: a.$ls-tight;
 }

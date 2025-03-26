@@ -2,7 +2,6 @@
 
 .container-hero {
   display: grid;
-  // grid-template-columns: 1fr 1fr 1fr;
   grid-template-columns: minmax(auto, 1fr) minmax(41rem, 1fr) minmax(auto, 1fr);
   grid-template-areas: "image-box-left content image-box-right";
   gap: 3.2rem;
@@ -10,6 +9,15 @@
   justify-items: center;
   align-items: center;
   width: 100%;
+
+  @include a.respond(tab-land) {
+    grid-template-columns: minmax(auto, 1fr) 1fr;
+    grid-template-areas:
+      "image-box-left image-box-right"
+      "content content";
+    gap: 0;
+    row-gap: 7.2rem;
+  }
 
   &__image-left {
     grid-area: image-box-left;
@@ -19,6 +27,10 @@
     // object-fit: cover;
     // min-width: 50%;
     // min-height: 50%;
+    @include a.respond(tab-land) {
+      transform: translateX(-6%) translateY(0);
+      justify-self: end;
+    }
 
     img {
       width: 100%;
@@ -29,6 +41,10 @@
     grid-area: image-box-right;
     justify-self: end;
     transform: translateX(6%) translateY(10%);
+    @include a.respond(tab-land) {
+      transform: translateX(6%) translateY(0);
+      justify-self: start;
+    }
     img {
       width: 100%;
     }
@@ -51,6 +67,10 @@
     justify-items: center;
     justify-content: space-between;
     text-align: center;
+
+    @include a.respond(tab-land) {
+      max-width: 44.8rem;
+    }
   }
 
   &__heading {

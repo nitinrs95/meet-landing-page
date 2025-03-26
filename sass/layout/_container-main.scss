@@ -8,14 +8,24 @@
   gap: 6.4rem;
   width: 112rem;
 
+  @include a.respond(tab-land) {
+    width: 68rem;
+  }
+
   &__images {
     display: flex;
     gap: 3.2rem;
     width: 100%;
+    @include a.respond(tab-land) {
+      gap: 2.4rem;
+    }
 
     img {
       width: 100%;
       max-width: 256px;
+      @include a.respond(tab-land) {
+        max-width: 152px;
+      }
     }
   }
 

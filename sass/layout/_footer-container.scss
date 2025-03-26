@@ -17,6 +17,10 @@
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
+
+  @include a.respond(tab-land) {
+    padding: 6.4rem 3.2rem;
+  }
 }
 
 .footer-content {
@@ -38,6 +42,11 @@
   }
 
   &__button {
+    align-self: flex-start;
+
+    @include a.respond(tab-land) {
+      align-self: center;
+    }
     span {
       color: a.$color-purple-300;
     }
@@ -45,7 +54,7 @@
     &:link,
     &:visited {
       background-color: a.$color-purple-600;
-      align-self: flex-start;
+
       width: auto;
       flex-shrink: 0;
     }
@@ -54,5 +63,14 @@
     &:active {
       background-color: a.$color-purple-300;
     }
+  }
+
+  @include a.respond(tab-land) {
+    width: 50.4rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2.4rem;
   }
 }
