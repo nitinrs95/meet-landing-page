@@ -287,7 +287,12 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 11.2rem 8rem;
-  background-image: linear-gradient(to right bottom, rgba(77, 150, 169, 0.9), rgba(77, 150, 169, 0.9)), url(../../assets/desktop/image-footer.jpg);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(77, 150, 169, 0.9),
+      rgba(77, 150, 169, 0.9)
+    ),
+    url(../assets/desktop/image-footer.jpg);
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -323,12 +328,14 @@ footer {
 .footer-content__button span {
   color: #d9b8ff;
 }
-.footer-content__button:link, .footer-content__button:visited {
+.footer-content__button:link,
+.footer-content__button:visited {
   background-color: #855fb1;
   width: auto;
   flex-shrink: 0;
 }
-.footer-content__button:hover, .footer-content__button:active {
+.footer-content__button:hover,
+.footer-content__button:active {
   background-color: #d9b8ff;
 }
 @media only screen and (max-width: 62.5em) {
@@ -359,28 +366,34 @@ footer {
   display: inline-block;
   color: #8fe3f9;
 }
-.btn--primary:link, .btn--primary:visited {
+.btn--primary:link,
+.btn--primary:visited {
   background-color: #4d96a9;
   justify-self: end;
 }
 @media only screen and (max-width: 29.6875em) {
-  .btn--primary:link, .btn--primary:visited {
+  .btn--primary:link,
+  .btn--primary:visited {
     justify-self: center;
   }
 }
-.btn--primary:hover, .btn--primary:active {
+.btn--primary:hover,
+.btn--primary:active {
   background-color: #8fe3f9;
 }
-.btn--secondary:link, .btn--secondary:visited {
+.btn--secondary:link,
+.btn--secondary:visited {
   background-color: #855fb1;
   justify-self: start;
 }
 @media only screen and (max-width: 29.6875em) {
-  .btn--secondary:link, .btn--secondary:visited {
+  .btn--secondary:link,
+  .btn--secondary:visited {
     justify-self: center;
   }
 }
-.btn--secondary:hover, .btn--secondary:active {
+.btn--secondary:hover,
+.btn--secondary:active {
   background-color: #d9b8ff;
 }
 
@@ -412,4 +425,4 @@ footer {
   color: #87879d;
   font-size: 1.6rem;
   font-weight: 900;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
