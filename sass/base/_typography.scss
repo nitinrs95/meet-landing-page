@@ -7,6 +7,10 @@ h1 {
   // font-size: 6.4rem;
   line-height: a.$lh-normal;
   letter-spacing: a.$ls-normal;
+
+  @include a.respond(tab-port) {
+    font-size: clamp(4rem, 7vw, 4.8rem);
+  }
 }
 
 p {
@@ -23,6 +27,9 @@ h2 {
   font-size: clamp(3.6rem, 4.5vw, 4rem);
   line-height: a.$lh-normal;
   letter-spacing: a.$ls-normal;
+  @include a.respond(tab-port) {
+    font-size: clamp(3.2rem, 7vw, 3.6rem);
+  }
 }
 
 h3 {
@@ -31,4 +38,7 @@ h3 {
   font-size: clamp(1.4rem, 2vw, 1.6rem);
   line-height: a.$lh-large;
   letter-spacing: a.$ls-tight;
+  @include a.respond(tab-port) {
+    font-size: clamp(1.2rem, 7vw, 1.4rem);
+  }
 }

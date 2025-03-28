@@ -16,7 +16,7 @@ section {
   &--main {
     padding: 5.6rem 3.2rem 6.4rem;
     @include v.respond(tab-land) {
-      padding: 5.6rem 0 7.2rem;
+      padding: 5.6rem 3.2rem 7.2rem;
     }
   }
 }
