@@ -19,6 +19,9 @@
   &--primary:visited {
     background-color: a.$color-cyan-600;
     justify-self: end;
+    @include a.respond(phone) {
+      justify-self: center;
+    }
   }
 
   &--primary:hover,
@@ -30,6 +33,9 @@
   &--secondary:visited {
     background-color: a.$color-purple-600;
     justify-self: start;
+    @include a.respond(phone) {
+      justify-self: center;
+    }
   }
 
   &--secondary:hover,

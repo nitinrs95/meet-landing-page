@@ -18,5 +18,8 @@ section {
     @include v.respond(tab-land) {
       padding: 5.6rem 3.2rem 7.2rem;
     }
+    // @include a.respond(phone) {
+    //   // justify-self: center;
+    // }
   }
 }

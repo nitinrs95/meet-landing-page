@@ -71,6 +71,16 @@
     @include a.respond(tab-land) {
       max-width: 44.8rem;
     }
+
+    @include a.respond(phone) {
+      grid-template-areas:
+        "heading"
+        "summary"
+        "btn1 "
+        "btn2";
+
+      max-width: 44.8rem;
+    }
   }
 
   &__heading {

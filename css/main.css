@@ -163,6 +163,12 @@ section {
     max-width: 44.8rem;
   }
 }
+@media only screen and (max-width: 29.6875em) {
+  .container-hero__hero-content {
+    grid-template-areas: "heading" "summary" "btn1 " "btn2";
+    max-width: 44.8rem;
+  }
+}
 .container-hero__heading {
   grid-area: heading;
   color: #28283d;
@@ -201,18 +207,28 @@ section {
     gap: 2.4rem;
   }
 }
+@media only screen and (max-width: 29.6875em) {
+  .container-main__images {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .container-main__images img {
   width: 100%;
   max-width: 256px;
-}
-@media only screen and (max-width: 62.5em) {
-  .container-main__images img {
-    max-width: 152px;
-  }
+  object-fit: cover;
 }
 .container-main__image-box {
+  display: flex;
+  align-items: center;
   border-radius: 10px;
   overflow: hidden;
+}
+@media only screen and (max-width: 29.6875em) {
+  .container-main__image-box {
+    flex: 1 0 45%;
+    text-align: center;
+  }
 }
 .container-main__main-content {
   text-align: center;
@@ -228,6 +244,11 @@ section {
   flex-direction: column;
   gap: 1.6rem;
   width: 44.5rem;
+}
+@media only screen and (max-width: 29.6875em) {
+  .container-main__heading {
+    width: 100%;
+  }
 }
 .container-main__tertiary-heading {
   color: #4d96a9;
@@ -342,12 +363,22 @@ footer {
   background-color: #4d96a9;
   justify-self: end;
 }
+@media only screen and (max-width: 29.6875em) {
+  .btn--primary:link, .btn--primary:visited {
+    justify-self: center;
+  }
+}
 .btn--primary:hover, .btn--primary:active {
   background-color: #8fe3f9;
 }
 .btn--secondary:link, .btn--secondary:visited {
   background-color: #855fb1;
   justify-self: start;
+}
+@media only screen and (max-width: 29.6875em) {
+  .btn--secondary:link, .btn--secondary:visited {
+    justify-self: center;
+  }
 }
 .btn--secondary:hover, .btn--secondary:active {
   background-color: #d9b8ff;

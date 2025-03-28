@@ -20,18 +20,27 @@
       gap: 2.4rem;
     }
 
+    @include a.respond(phone) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
     img {
       width: 100%;
       max-width: 256px;
-      @include a.respond(tab-land) {
-        max-width: 152px;
-      }
+      object-fit: cover;
     }
   }
 
   &__image-box {
+    display: flex;
+    align-items: center;
     border-radius: 10px;
     overflow: hidden;
+    @include a.respond(phone) {
+      flex: 1 0 45%;
+      text-align: center;
+    }
   }
 
   &__main-content {
@@ -49,6 +58,9 @@
     flex-direction: column;
     gap: 1.6rem;
     width: 44.5rem;
+    @include a.respond(phone) {
+      width: 100%;
+    }
   }
 
   &__tertiary-heading {
